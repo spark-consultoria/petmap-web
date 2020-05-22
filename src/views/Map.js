@@ -21,14 +21,24 @@ import {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
-  Marker
+  Marker,
 } from "react-google-maps";
 
 // reactstrap components
-import { Card, CardHeader, CardBody, Row, Col } from "reactstrap";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  Row,
+  Col,
+  CardTitle,
+  Table,
+  Button,
+} from "reactstrap";
+import "./map.scss";
 
 const MapWrapper = withScriptjs(
-  withGoogleMap(props => (
+  withGoogleMap((props) => (
     <GoogleMap
       defaultZoom={13}
       defaultCenter={{ lat: 40.748817, lng: -73.985428 }}
@@ -39,243 +49,243 @@ const MapWrapper = withScriptjs(
             elementType: "geometry",
             stylers: [
               {
-                color: "#1d2c4d"
-              }
-            ]
+                color: "#1d2c4d",
+              },
+            ],
           },
           {
             elementType: "labels.text.fill",
             stylers: [
               {
-                color: "#8ec3b9"
-              }
-            ]
+                color: "#8ec3b9",
+              },
+            ],
           },
           {
             elementType: "labels.text.stroke",
             stylers: [
               {
-                color: "#1a3646"
-              }
-            ]
+                color: "#1a3646",
+              },
+            ],
           },
           {
             featureType: "administrative.country",
             elementType: "geometry.stroke",
             stylers: [
               {
-                color: "#4b6878"
-              }
-            ]
+                color: "#4b6878",
+              },
+            ],
           },
           {
             featureType: "administrative.land_parcel",
             elementType: "labels.text.fill",
             stylers: [
               {
-                color: "#64779e"
-              }
-            ]
+                color: "#64779e",
+              },
+            ],
           },
           {
             featureType: "administrative.province",
             elementType: "geometry.stroke",
             stylers: [
               {
-                color: "#4b6878"
-              }
-            ]
+                color: "#4b6878",
+              },
+            ],
           },
           {
             featureType: "landscape.man_made",
             elementType: "geometry.stroke",
             stylers: [
               {
-                color: "#334e87"
-              }
-            ]
+                color: "#334e87",
+              },
+            ],
           },
           {
             featureType: "landscape.natural",
             elementType: "geometry",
             stylers: [
               {
-                color: "#023e58"
-              }
-            ]
+                color: "#023e58",
+              },
+            ],
           },
           {
             featureType: "poi",
             elementType: "geometry",
             stylers: [
               {
-                color: "#283d6a"
-              }
-            ]
+                color: "#283d6a",
+              },
+            ],
           },
           {
             featureType: "poi",
             elementType: "labels.text.fill",
             stylers: [
               {
-                color: "#6f9ba5"
-              }
-            ]
+                color: "#6f9ba5",
+              },
+            ],
           },
           {
             featureType: "poi",
             elementType: "labels.text.stroke",
             stylers: [
               {
-                color: "#1d2c4d"
-              }
-            ]
+                color: "#1d2c4d",
+              },
+            ],
           },
           {
             featureType: "poi.park",
             elementType: "geometry.fill",
             stylers: [
               {
-                color: "#023e58"
-              }
-            ]
+                color: "#023e58",
+              },
+            ],
           },
           {
             featureType: "poi.park",
             elementType: "labels.text.fill",
             stylers: [
               {
-                color: "#3C7680"
-              }
-            ]
+                color: "#3C7680",
+              },
+            ],
           },
           {
             featureType: "road",
             elementType: "geometry",
             stylers: [
               {
-                color: "#304a7d"
-              }
-            ]
+                color: "#304a7d",
+              },
+            ],
           },
           {
             featureType: "road",
             elementType: "labels.text.fill",
             stylers: [
               {
-                color: "#98a5be"
-              }
-            ]
+                color: "#98a5be",
+              },
+            ],
           },
           {
             featureType: "road",
             elementType: "labels.text.stroke",
             stylers: [
               {
-                color: "#1d2c4d"
-              }
-            ]
+                color: "#1d2c4d",
+              },
+            ],
           },
           {
             featureType: "road.highway",
             elementType: "geometry",
             stylers: [
               {
-                color: "#2c6675"
-              }
-            ]
+                color: "#2c6675",
+              },
+            ],
           },
           {
             featureType: "road.highway",
             elementType: "geometry.fill",
             stylers: [
               {
-                color: "#9d2a80"
-              }
-            ]
+                color: "#9d2a80",
+              },
+            ],
           },
           {
             featureType: "road.highway",
             elementType: "geometry.stroke",
             stylers: [
               {
-                color: "#9d2a80"
-              }
-            ]
+                color: "#9d2a80",
+              },
+            ],
           },
           {
             featureType: "road.highway",
             elementType: "labels.text.fill",
             stylers: [
               {
-                color: "#b0d5ce"
-              }
-            ]
+                color: "#b0d5ce",
+              },
+            ],
           },
           {
             featureType: "road.highway",
             elementType: "labels.text.stroke",
             stylers: [
               {
-                color: "#023e58"
-              }
-            ]
+                color: "#023e58",
+              },
+            ],
           },
           {
             featureType: "transit",
             elementType: "labels.text.fill",
             stylers: [
               {
-                color: "#98a5be"
-              }
-            ]
+                color: "#98a5be",
+              },
+            ],
           },
           {
             featureType: "transit",
             elementType: "labels.text.stroke",
             stylers: [
               {
-                color: "#1d2c4d"
-              }
-            ]
+                color: "#1d2c4d",
+              },
+            ],
           },
           {
             featureType: "transit.line",
             elementType: "geometry.fill",
             stylers: [
               {
-                color: "#283d6a"
-              }
-            ]
+                color: "#283d6a",
+              },
+            ],
           },
           {
             featureType: "transit.station",
             elementType: "geometry",
             stylers: [
               {
-                color: "#3a4762"
-              }
-            ]
+                color: "#3a4762",
+              },
+            ],
           },
           {
             featureType: "water",
             elementType: "geometry",
             stylers: [
               {
-                color: "#0e1626"
-              }
-            ]
+                color: "#0e1626",
+              },
+            ],
           },
           {
             featureType: "water",
             elementType: "labels.text.fill",
             stylers: [
               {
-                color: "#4e6d70"
-              }
-            ]
-          }
-        ]
+                color: "#4e6d70",
+              },
+            ],
+          },
+        ],
       }}
     >
       <Marker position={{ lat: 40.748817, lng: -73.985428 }} />
@@ -288,7 +298,7 @@ class Map extends React.Component {
     return (
       <>
         <div className="content">
-          <Row>
+          {/* <Row>
             <Col md="12">
               <Card className="card-plain">
                 <CardHeader>Google Maps</CardHeader>
@@ -305,6 +315,121 @@ class Map extends React.Component {
                       mapElement={<div style={{ height: `100%` }} />}
                     />
                   </div>
+                </CardBody>
+              </Card>
+            </Col>
+          </Row> */}
+          <Row>
+            <Col md="12">
+              <Card>
+                <CardHeader>
+                  <CardTitle tag="h4">Advogados</CardTitle>
+                </CardHeader>
+                <CardBody>
+                  <Table responsive>
+                    <thead>
+                      <tr>
+                        <th className="text-center">#</th>
+                        <th>Name</th>
+                        <th>Level</th>
+                        <th className="text-center">Since</th>
+                        <th className="text-right">Salary</th>
+                        <th className="text-right">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="text-center">1</td>
+                        <td>Andrew Mike</td>
+                        <td>Develop</td>
+                        <td className="text-center">2013</td>
+                        <td className="text-right">€ 99,225</td>
+                        <td className="text-right">
+                          <Button className="btn-icon" color="info" size="sm">
+                            <i className="fa fa-user"></i>
+                          </Button>
+                          {` `}
+                          <Button
+                            className="btn-icon"
+                            color="success"
+                            size="sm"
+                          >
+                            <i className="fa fa-edit"></i>
+                          </Button>
+                          {` `}
+                          <Button className="btn-icon" color="danger" size="sm">
+                            <i className="fa fa-times" />
+                          </Button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="text-center">2</td>
+                        <td>Manuel Rico</td>
+                        <td>Manager</td>
+                        <td className="text-center">2012</td>
+                        <td className="text-right">€ 99,201</td>
+                        <td className="text-right">
+                          <Button
+                            className="btn-icon btn-round"
+                            color="info"
+                            size="sm"
+                          >
+                            <i className="fa fa-user"></i>
+                          </Button>
+                          {` `}
+                          <Button
+                            className="btn-icon btn-round"
+                            color="success"
+                            size="sm"
+                          >
+                            <i className="fa fa-edit"></i>
+                          </Button>
+                          {` `}
+                          <Button
+                            className="btn-icon btn-round"
+                            color="danger"
+                            size="sm"
+                          >
+                            <i className="fa fa-times" />
+                          </Button>
+                          {` `}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="text-center">3</td>
+                        <td>Alex Mike</td>
+                        <td>Designer</td>
+                        <td className="text-center">2012</td>
+                        <td className="text-right">€ 99,201</td>
+                        <td className="text-right">
+                          <Button
+                            className="btn-icon btn-simple"
+                            color="info"
+                            size="sm"
+                          >
+                            <i className="fa fa-user"></i>
+                          </Button>
+                          {` `}
+                          <Button
+                            className="btn-icon btn-simple"
+                            color="success"
+                            size="sm"
+                          >
+                            <i className="fa fa-edit"></i>
+                          </Button>
+                          {` `}
+                          <Button
+                            className="btn-icon btn-simple"
+                            color="danger"
+                            size="sm"
+                          >
+                            <i className="fa fa-times" />
+                          </Button>
+                          {` `}
+                        </td>
+                      </tr>
+                    </tbody>
+                  </Table>
                 </CardBody>
               </Card>
             </Col>
