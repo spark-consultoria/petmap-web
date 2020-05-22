@@ -1,5 +1,6 @@
 import Dashboard from 'views/Dashboard.js';
-import Icons from 'views/Icons.js';
+
+import Places from './views/Places.js';
 import Map from 'views/Map.js';
 import UserProfile from 'views/UserProfile.js';
 
@@ -13,11 +14,11 @@ var routes = [
     layout: '/admin'
   },
   {
-    path: '/icons',
+    path: '/places',
     name: 'Locais',
     rtlName: 'الرموز',
     icon: 'tim-icons icon-book-bookmark',
-    component: Icons,
+    component: Places,
     layout: '/admin'
   },
   {
@@ -27,14 +28,14 @@ var routes = [
     icon: 'tim-icons icon-single-02',
     component: Map,
     layout: '/admin'
-  },
-  {
-    path: '/profile',
-    name: 'Configuracoes',
-    rtlName: 'خرائط',
-    icon: 'tim-icons icon-settings-gear-63',
-    component: UserProfile,
-    layout: '/admin'
   }
+  // {
+  //   path: '/profile',
+  //   name: 'Configuracoes',
+  //   rtlName: 'خرائط',
+  //   icon: 'tim-icons icon-settings-gear-63',
+  //   component: UserProfile,
+  //   layout: '/admin'
+  // }
 ];
 export default routes;
