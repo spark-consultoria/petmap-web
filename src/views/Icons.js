@@ -15,8 +15,8 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
-import "./icons.scss";
+import React from 'react';
+import './icons.scss';
 
 // reactstrap components
 import {
@@ -27,14 +27,12 @@ import {
   Col,
   Button,
   CardFooter,
-  CardText,
   FormGroup,
   Form,
-  Input,
-} from "reactstrap";
+  Input
+} from 'reactstrap';
 
-import { Editor } from "react-draft-wysiwyg";
-import "../../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+import '../../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
 class Icons extends React.Component {
   render() {
@@ -42,10 +40,10 @@ class Icons extends React.Component {
       <>
         <div className="content">
           <Row>
-            <Col md="8">
+            <Col md="12">
               <Card>
                 <CardHeader>
-                  <h5 className="title">Cadastrar Artigo</h5>
+                  <h5 className="title">Cadastrar Local</h5>
                 </CardHeader>
                 <CardBody>
                   <Form>
@@ -83,21 +81,21 @@ class Icons extends React.Component {
                     <Row>
                       <Col className="pr-md-1" md="6">
                         <FormGroup>
-                          <label>Escrito por</label>
+                          <label>Nome do Local</label>
                           <Input
-                            defaultValue="Mike"
-                            placeholder="Company"
+                            placeholder="Pet / Restaurante / Loja "
                             type="text"
+                            style={{ color: '#000' }}
                           />
                         </FormGroup>
                       </Col>
                       <Col className="pl-md-1" md="6">
                         <FormGroup>
-                          <label>Titulo do Artigo</label>
+                          <label>Digite o CEP</label>
                           <Input
-                            defaultValue="Andrew"
-                            placeholder="Last Name"
+                            placeholder="00000-000"
                             type="text"
+                            style={{ color: '#000' }}
                           />
                         </FormGroup>
                       </Col>
@@ -143,18 +141,64 @@ class Icons extends React.Component {
                       </Col>
                     </Row> */}
                     <Row>
-                      <Col md="12">
+                      <Col className="pr-md-1" md="4">
                         <FormGroup>
-                          <label>Artigo</label>
-                          {/* <Input
-                            cols="80"
-                            defaultValue="Lamborghini Mercy, Your chick she so thirsty, I'm in
-                            that two seat Lambo."
-                            placeholder="Here can be your description"
-                            rows="4"
-                            type="textarea"
-                          /> */}
-                          <Editor />
+                          <label>Nome da Rua</label>
+                          <Input
+                            placeholder=""
+                            type="text"
+                            style={{ color: '#000' }}
+                          />
+                        </FormGroup>
+                      </Col>
+                      <Col className="pl-md-1" md="4">
+                        <FormGroup>
+                          <label>Cidade</label>
+                          <Input
+                            placeholder=""
+                            type="text"
+                            style={{ color: '#000' }}
+                          />
+                        </FormGroup>
+                      </Col>
+                      <Col md="4">
+                        <FormGroup>
+                          <label>Estado</label>
+                          <Input
+                            required
+                            aria-required="true"
+                            type="select"
+                            name="countryStates"
+                            id="exampleSelectMulti">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+                          </Input>
                         </FormGroup>
                       </Col>
                     </Row>
