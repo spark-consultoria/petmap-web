@@ -1,93 +1,41 @@
-import React from 'react';
-import { Switch, Redirect } from 'react-router-dom';
+import Dashboard from 'views/Dashboard.js';
 
-import { RouteWithLayout } from './components';
-import { Main as MainLayout, Minimal as MinimalLayout } from './layouts';
+import Places from './views/Places.js';
+import Map from 'views/Map.js';
+import UserProfile from 'views/UserProfile.js';
 
-import {
-  Dashboard as DashboardView,
-  ProductList as ProductListView,
-  UserList as UserListView,
-  Typography as TypographyView,
-  Icons as IconsView,
-  Account as AccountView,
-  Settings as SettingsView,
-  SignUp as SignUpView,
-  SignIn as SignInView,
-  NotFound as NotFoundView
-} from './views';
-
-const Routes = () => {
-  return (
-    <Switch>
-      <Redirect
-        exact
-        from="/"
-        to="/dashboard"
-      />
-      <RouteWithLayout
-        component={DashboardView}
-        exact
-        layout={MainLayout}
-        path="/dashboard"
-      />
-      <RouteWithLayout
-        component={UserListView}
-        exact
-        layout={MainLayout}
-        path="/users"
-      />
-      <RouteWithLayout
-        component={ProductListView}
-        exact
-        layout={MainLayout}
-        path="/products"
-      />
-      <RouteWithLayout
-        component={TypographyView}
-        exact
-        layout={MainLayout}
-        path="/typography"
-      />
-      <RouteWithLayout
-        component={IconsView}
-        exact
-        layout={MainLayout}
-        path="/icons"
-      />
-      <RouteWithLayout
-        component={AccountView}
-        exact
-        layout={MainLayout}
-        path="/account"
-      />
-      <RouteWithLayout
-        component={SettingsView}
-        exact
-        layout={MainLayout}
-        path="/settings"
-      />
-      <RouteWithLayout
-        component={SignUpView}
-        exact
-        layout={MinimalLayout}
-        path="/sign-up"
-      />
-      <RouteWithLayout
-        component={SignInView}
-        exact
-        layout={MinimalLayout}
-        path="/sign-in"
-      />
-      <RouteWithLayout
-        component={NotFoundView}
-        exact
-        layout={MinimalLayout}
-        path="/not-found"
-      />
-      <Redirect to="/not-found" />
-    </Switch>
-  );
-};
-
-export default Routes;
+var routes = [
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    rtlName: 'لوحة القيادة',
+    icon: 'tim-icons icon-chart-pie-36',
+    component: Dashboard,
+    layout: '/admin'
+  },
+  {
+    path: '/places',
+    name: 'Locais',
+    rtlName: 'الرموز',
+    icon: 'tim-icons icon-book-bookmark',
+    component: Places,
+    layout: '/admin'
+  },
+  {
+    path: '/map',
+    name: 'Parceiros',
+    rtlName: 'خرائط',
+    icon: 'tim-icons icon-single-02',
+    component: Map,
+    layout: '/admin'
+  }
+  // {
+  //   path: '/profile',
+  //   name: 'Configuracoes',
+  //   rtlName: 'خرائط',
+  //   icon: 'tim-icons icon-settings-gear-63',
+  //   component: UserProfile,
+  //   layout: '/admin'
+  // }
+];
+export default routes;
