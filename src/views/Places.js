@@ -55,7 +55,6 @@ class Places extends React.Component {
                             <option value="cab">Cabeleireiro</option>
                             <option value="shop">Shopping</option>
                             <option value="rest">Restaurante</option>
-                            <option value="rest">Eventos</option>
                           </Input>
                         </FormGroup>
                       </Col>
