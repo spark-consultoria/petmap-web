@@ -4,24 +4,30 @@
   "private": true,
   "homepage": "https://demos.creative-tim.com/black-dashboard-react/#/admin/dashboard",
   "dependencies": {
-    "@types/react": "16.9.23",
-    "chart.js": "2.9.3",
-    "classnames": "2.2.6",
-    "draft-js": "^0.11.5",
-    "history": "4.10.1",
-    "immutable": "^4.0.0-rc.12",
-    "node-sass": "4.13.1",
-    "perfect-scrollbar": "1.5.0",
-    "prop-types": "15.7.2",
-    "react": "16.13.0",
-    "react-chartjs-2": "2.9.0",
-    "react-dom": "16.13.0",
+    "@material-ui/core": "^4.2.1",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.2.1",
+    "chart.js": "^2.8.0",
+    "classnames": "^2.2.6",
+    "clsx": "^1.0.4",
+    "history": "^4.9.0",
+    "moment": "^2.24.0",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-chartjs-2": "^2.7.6",
+    "react-dom": "^16.8.6",
     "react-draft-wysiwyg": "^1.14.5",
-    "react-google-maps": "9.4.5",
-    "react-notification-alert": "0.0.12",
-    "react-router-dom": "5.1.2",
-    "react-scripts": "3.4.0",
-    "reactstrap": "8.4.1"
+    "react-google-maps": "^9.4.5",
+    "react-perfect-scrollbar": "^1.5.3",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.0.1",
+    "react-toggle": "^4.1.1",
+    "reactstrap": "^8.4.1",
+    "recompose": "^0.30.0",
+    "underscore": "^1.9.1",
+    "uuid": "^3.3.2",
+    "validate.js": "^0.13.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,19 +42,6 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-<<<<<<< HEAD
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "optionalDependencies": {
-    "@types/googlemaps": "3.39.3",
-    "@types/markerclustererplus": "2.1.33",
-    "eslint-plugin-flowtype": "3.13.0",
-    "typescript": "3.8.3"
-=======
   "browserslist": {
     "production": [
       ">0.2%",
@@ -60,28 +53,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "dependencies": {
-    "@material-ui/core": "^4.2.1",
-    "@material-ui/icons": "^4.9.1",
-    "@material-ui/styles": "^4.2.1",
-    "chart.js": "^2.8.0",
-    "clsx": "^1.0.4",
-    "history": "^4.9.0",
-    "moment": "^2.24.0",
-    "node-sass": "^4.12.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-chartjs-2": "^2.7.6",
-    "react-dom": "^16.8.6",
-    "react-perfect-scrollbar": "^1.5.3",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "^3.0.1",
-    "recompose": "^0.30.0",
-    "underscore": "^1.9.1",
-    "uuid": "^3.3.2",
-    "validate.js": "^0.13.1"
->>>>>>> d614a3c9461956350b60fe65bbc8c95b06275702
   },
   "devDependencies": {
     "gulp": "4.0.2",
