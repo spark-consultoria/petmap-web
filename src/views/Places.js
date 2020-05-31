@@ -53,7 +53,6 @@ class Places extends React.Component {
                             <option value="pet">Petshop</option>
                             <option value="cab">Cabeleireiro</option>
                             <option value="shop">Shopping</option>
-                            <option value="rest">Restaurante</option>
                           </Input>
                         </FormGroup>
                       </Col>
