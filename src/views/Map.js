@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Black Dashboard React v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/black-dashboard-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from 'react';
 // react plugin used to create google maps
 import {
@@ -61,7 +44,7 @@ class Map extends React.Component {
                   </p>
                 ))}
 
-                {/* <CardBody>
+                <CardBody>
                   <Table responsive>
                     <thead>
                       <tr>
@@ -88,8 +71,7 @@ class Map extends React.Component {
                           <Button
                             className="btn-icon"
                             color="success"
-                            size="sm"
-                          >
+                            size="sm">
                             <i className="fa fa-edit"></i>
                           </Button>
                           {` `}
@@ -108,24 +90,21 @@ class Map extends React.Component {
                           <Button
                             className="btn-icon btn-round"
                             color="info"
-                            size="sm"
-                          >
+                            size="sm">
                             <i className="fa fa-user"></i>
                           </Button>
                           {` `}
                           <Button
                             className="btn-icon btn-round"
                             color="success"
-                            size="sm"
-                          >
+                            size="sm">
                             <i className="fa fa-edit"></i>
                           </Button>
                           {` `}
                           <Button
                             className="btn-icon btn-round"
                             color="danger"
-                            size="sm"
-                          >
+                            size="sm">
                             <i className="fa fa-times" />
                           </Button>
                           {` `}
@@ -141,24 +120,21 @@ class Map extends React.Component {
                           <Button
                             className="btn-icon btn-simple"
                             color="info"
-                            size="sm"
-                          >
+                            size="sm">
                             <i className="fa fa-user"></i>
                           </Button>
                           {` `}
                           <Button
                             className="btn-icon btn-simple"
                             color="success"
-                            size="sm"
-                          >
+                            size="sm">
                             <i className="fa fa-edit"></i>
                           </Button>
                           {` `}
                           <Button
                             className="btn-icon btn-simple"
                             color="danger"
-                            size="sm"
-                          >
+                            size="sm">
                             <i className="fa fa-times" />
                           </Button>
                           {` `}
@@ -166,7 +142,7 @@ class Map extends React.Component {
                       </tr>
                     </tbody>
                   </Table>
-                </CardBody> */}
+                </CardBody>
               </Card>
             </Col>
           </Row>
