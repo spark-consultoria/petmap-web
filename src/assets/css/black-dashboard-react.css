@@ -14663,7 +14663,8 @@ hr {
   text-transform: uppercase;
   font-weight: 700;
   border: 0;
-  color: rgba(255, 255, 255, 0.7);
+  /* color: rgba(255, 255, 255, 0.7); */
+  color: #000 !important;
 }
 
 .table .radio,
