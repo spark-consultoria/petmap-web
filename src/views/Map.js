@@ -34,7 +34,7 @@ class Map extends React.Component {
                   <CardTitle tag="h4">Parceiros</CardTitle>
                 </CardHeader>
 
-                {mock.partners.map((data) => (
+                {/* {mock.partners.map((data) => (
                   <p
                     key={data.id}
                     style={{
@@ -42,7 +42,7 @@ class Map extends React.Component {
                     }}>
                     {data.name}
                   </p>
-                ))}
+                ))} */}
 
                 <CardBody>
                   <Table striped>
@@ -53,26 +53,75 @@ class Map extends React.Component {
                         <th>Telefone</th>
                         <th>Parceiro</th>
                         <th>Endereço</th>
+                        <th>Tipo de Local</th>
+                        <th>Cupons Ativos</th>
+                        <th>Cupons Utilizados</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td>PetShop Alegra </td>
+                        <td>(11) 4426-2940</td>
+                        <td>Sim</td>
+                        <td>Rua Presidente Altino, 426</td>
+                        <td>Restaurante</td>
+                        <td>212</td>
+                        <td>626</td>
                       </tr>
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <th scope="row">1</th>
+                        <td>PetShop Alegra </td>
+                        <td>(11) 4426-2940</td>
+                        <td>Sim</td>
+                        <td>Rua Presidente Altino, 426</td>
+                        <td>212</td>
+                        <td>626</td>
                       </tr>
                       <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
+                        <th scope="row">1</th>
+                        <td>PetShop Alegra </td>
+                        <td>(11) 4426-2940</td>
+                        <td>Sim</td>
+                        <td>Rua Presidente Altino, 426</td>
+                        <td>212</td>
+                        <td>626</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>PetShop Alegra </td>
+                        <td>(11) 4426-2940</td>
+                        <td>Sim</td>
+                        <td>Rua Presidente Altino, 426</td>
+                        <td>212</td>
+                        <td>626</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>PetShop Alegra </td>
+                        <td>(11) 4426-2940</td>
+                        <td>Sim</td>
+                        <td>Rua Presidente Altino, 426</td>
+                        <td>212</td>
+                        <td>626</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>PetShop Alegra </td>
+                        <td>(11) 4426-2940</td>
+                        <td>Sim</td>
+                        <td>Rua Presidente Altino, 426</td>
+                        <td>212</td>
+                        <td>626</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>PetShop Alegra </td>
+                        <td>(11) 4426-2940</td>
+                        <td>Sim</td>
+                        <td>Rua Presidente Altino, 426</td>
+                        <td>212</td>
+                        <td>626</td>
                       </tr>
                     </tbody>
                   </Table>
