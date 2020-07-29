@@ -53,8 +53,9 @@ class Map extends React.Component {
                         <th>Telefone</th>
                         <th>Parceiro</th>
                         <th>Endereço</th>
-                        <th>Tipo de Local</th>
+                        <th>Numero</th>
                         <th>Telefone</th>
+                        <th>Tipo de Local</th>
                         <th>Cupons Ativos</th>
                         <th>Cupons Utilizados</th>
                       </tr>
@@ -65,64 +66,12 @@ class Map extends React.Component {
                         <td>PetShop Alegra </td>
                         <td>(11) 4426-2940</td>
                         <td>Sim</td>
-                        <td>Rua Presidente Altino, 426</td>
+                        <td>Rua Presidente Altino</td>
+                        <td>426</td>
+                        <td>(11) 4122-4812</td>
                         <td>Restaurante</td>
-                        <td>212</td>
                         <td>626</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>PetShop Alegra </td>
-                        <td>(11) 4426-2940</td>
-                        <td>Sim</td>
-                        <td>Rua Presidente Altino, 426</td>
-                        <td>212</td>
-                        <td>626</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>PetShop Alegra </td>
-                        <td>(11) 4426-2940</td>
-                        <td>Sim</td>
-                        <td>Rua Presidente Altino, 426</td>
-                        <td>212</td>
-                        <td>626</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>PetShop Alegra </td>
-                        <td>(11) 4426-2940</td>
-                        <td>Sim</td>
-                        <td>Rua Presidente Altino, 426</td>
-                        <td>212</td>
-                        <td>626</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>PetShop Alegra </td>
-                        <td>(11) 4426-2940</td>
-                        <td>Sim</td>
-                        <td>Rua Presidente Altino, 426</td>
-                        <td>212</td>
-                        <td>626</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>PetShop Alegra </td>
-                        <td>(11) 4426-2940</td>
-                        <td>Sim</td>
-                        <td>Rua Presidente Altino, 426</td>
-                        <td>212</td>
-                        <td>626</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>PetShop Alegra </td>
-                        <td>(11) 4426-2940</td>
-                        <td>Sim</td>
-                        <td>Rua Presidente Altino, 426</td>
-                        <td>212</td>
-                        <td>626</td>
+                        <td>312</td>
                       </tr>
                     </tbody>
                   </Table>
