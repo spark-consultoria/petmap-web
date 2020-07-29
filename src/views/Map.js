@@ -54,6 +54,7 @@ class Map extends React.Component {
                         <th>Parceiro</th>
                         <th>Endereço</th>
                         <th>Tipo de Local</th>
+                        <th>Telefone</th>
                         <th>Cupons Ativos</th>
                         <th>Cupons Utilizados</th>
                       </tr>
