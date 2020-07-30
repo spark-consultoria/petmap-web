@@ -34,16 +34,6 @@ class Map extends React.Component {
                   <CardTitle tag="h4">Parceiros</CardTitle>
                 </CardHeader>
 
-                {/* {mock.partners.map((data) => (
-                  <p
-                    key={data.id}
-                    style={{
-                      color: '#000'
-                    }}>
-                    {data.name}
-                  </p>
-                ))} */}
-
                 <CardBody>
                   <Table striped>
                     <thead>
