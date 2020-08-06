@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Partners = () => {
-  return <div>Parceiros</div>;
+  return <div>Partners</div>;
 };
 
 export default Partners;
