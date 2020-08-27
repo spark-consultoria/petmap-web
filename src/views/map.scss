@@ -1,6 +1,15 @@
 .table {
-  background-color: #393939 !important;
+  background-color: #fff;
 }
 .card .card-header .card-title {
+  color: #000 !important;
+}
+
+.table > tbody > tr > td {
+  color: #000 !important;
+  cursor: pointer;
+}
+
+.table > thead > tr > th {
   color: #000 !important;
 }

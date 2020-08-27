@@ -32,9 +32,8 @@ class Places extends React.Component {
                 </CardHeader>
                 <CardBody>
                   <Form>
-                    <Row></Row>
                     <Row>
-                      <Col md="6">
+                      <Col md="3">
                         <FormGroup>
                           <label>Nome do Local</label>
                           <Input
@@ -44,7 +43,7 @@ class Places extends React.Component {
                           />
                         </FormGroup>
                       </Col>
-                      <Col md="6">
+                      <Col md="2">
                         <FormGroup>
                           <label>Tipo de Local</label>
                           <Input
@@ -54,7 +53,6 @@ class Places extends React.Component {
                             <option value="pet">Petshop</option>
                             <option value="cab">Cabeleireiro</option>
                             <option value="shop">Shopping</option>
-                            <option value="rest">Restaurante</option>
                           </Input>
                         </FormGroup>
                       </Col>
@@ -98,7 +96,7 @@ class Places extends React.Component {
                           />
                         </FormGroup>
                       </Col>
-                      <Col md="3">
+                      <Col md="2">
                         <FormGroup>
                           <label>Estado</label>
                           <Input
@@ -136,8 +134,6 @@ class Places extends React.Component {
                           </Input>
                         </FormGroup>
                       </Col>
-                    </Row>
-                    <Row>
                       <Col md="3">
                         <FormGroup>
                           <label>Fotos do Local</label>

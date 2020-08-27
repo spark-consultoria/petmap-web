@@ -3,6 +3,7 @@ import Dashboard from 'views/Dashboard.js';
 import Places from './views/Places.js';
 import Map from 'views/Map.js';
 import UserProfile from 'views/UserProfile.js';
+import Missions from 'views/Missions';
 
 var routes = [
   {
@@ -27,6 +28,14 @@ var routes = [
     rtlName: 'خرائط',
     icon: 'tim-icons icon-single-02',
     component: Map,
+    layout: '/admin'
+  },
+  {
+    path: '/missions',
+    name: 'Missoes',
+    rtlName: 'خرائط',
+    icon: 'tim-icons icon-single-02',
+    component: Missions,
     layout: '/admin'
   }
   // {
