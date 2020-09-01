@@ -1,9 +1,8 @@
 import Dashboard from 'views/Dashboard.js';
 
 import Places from './views/Places.js';
-import Map from 'views/Map.js';
-import UserProfile from 'views/UserProfile.js';
 import Missions from 'views/Missions';
+import Partners from 'views/Partners';
 
 var routes = [
   {
@@ -23,11 +22,11 @@ var routes = [
     layout: '/admin'
   },
   {
-    path: '/map',
+    path: '/partners',
     name: 'Parceiros',
     rtlName: 'خرائط',
     icon: 'tim-icons icon-single-02',
-    component: Map,
+    component: Partners,
     layout: '/admin'
   },
   {

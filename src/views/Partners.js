@@ -1,11 +1,5 @@
 import React from 'react';
 // react plugin used to create google maps
-import {
-  withScriptjs,
-  withGoogleMap,
-  GoogleMap,
-  Marker
-} from 'react-google-maps';
 
 // reactstrap components
 import {
@@ -15,14 +9,11 @@ import {
   Row,
   Col,
   CardTitle,
-  Table,
-  Button
+  Table
 } from 'reactstrap';
 import './map.scss';
 
-import mock from '../mock/index';
-
-class Map extends React.Component {
+class Partners extends React.Component {
   render() {
     return (
       <>
@@ -75,4 +66,4 @@ class Map extends React.Component {
   }
 }
 
-export default Map;
+export default Partners;
