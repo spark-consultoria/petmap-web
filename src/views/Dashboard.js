@@ -72,7 +72,7 @@ class Dashboard extends React.Component {
                 <CardHeader>
                   <Row>
                     <Col className="text-left" sm="6">
-                      <h5 className="card-category">Total Shipments</h5>
+                      <h5 className="card-category">Dados Gerais</h5>
                       <CardTitle tag="h2">Performance</CardTitle>
                     </Col>
                     <Col sm="6">
@@ -80,64 +80,64 @@ class Dashboard extends React.Component {
                         className="btn-group-toggle float-right"
                         data-toggle="buttons">
                         <Button
-                          tag="label"
                           className={classNames('btn-simple', {
                             active: this.state.bigChartData === 'data1'
                           })}
                           color="info"
                           id="0"
+                          onClick={() => this.setBgChartData('data1')}
                           size="sm"
-                          onClick={() => this.setBgChartData('data1')}>
+                          tag="label">
                           <input
-                            defaultChecked
                             className="d-none"
+                            defaultChecked
                             name="options"
                             type="radio"
                           />
                           <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                            Accounts
+                            Parceiros
                           </span>
                           <span className="d-block d-sm-none">
                             <i className="tim-icons icon-single-02" />
                           </span>
                         </Button>
                         <Button
-                          color="info"
-                          id="1"
-                          size="sm"
-                          tag="label"
                           className={classNames('btn-simple', {
                             active: this.state.bigChartData === 'data2'
                           })}
-                          onClick={() => this.setBgChartData('data2')}>
+                          color="info"
+                          id="1"
+                          onClick={() => this.setBgChartData('data2')}
+                          size="sm"
+                          tag="label">
                           <input
                             className="d-none"
                             name="options"
                             type="radio"
                           />
                           <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                            Purchases
+                            Cupons
                           </span>
                           <span className="d-block d-sm-none">
                             <i className="tim-icons icon-gift-2" />
                           </span>
                         </Button>
                         <Button
-                          color="info"
-                          id="2"
-                          size="sm"
-                          tag="label"
                           className={classNames('btn-simple', {
                             active: this.state.bigChartData === 'data3'
                           })}
-                          onClick={() => this.setBgChartData('data3')}>
+                          color="info"
+                          id="2"
+                          onClick={() => this.setBgChartData('data3')}
+                          size="sm"
+                          tag="label">
                           <input
                             className="d-none"
                             name="options"
                             type="radio"
                           />
                           <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                            Sessions
+                            Novos Ususarios
                           </span>
                           <span className="d-block d-sm-none">
                             <i className="tim-icons icon-tap-02" />
@@ -162,9 +162,9 @@ class Dashboard extends React.Component {
             <Col lg="4">
               <Card className="card-chart">
                 <CardHeader>
-                  <h5 className="card-category">Total Shipments</h5>
+                  <h5 className="card-category">Desconto em Cupons</h5>
                   <CardTitle tag="h3">
-                    <i className="tim-icons icon-bell-55 text-info" /> 763,215
+                    <i className="tim-icons icon-bell-55 text-info" /> 33.922,01
                   </CardTitle>
                 </CardHeader>
                 <CardBody>
@@ -180,10 +180,10 @@ class Dashboard extends React.Component {
             <Col lg="4">
               <Card className="card-chart">
                 <CardHeader>
-                  <h5 className="card-category">Daily Sales</h5>
+                  <h5 className="card-category">Media de Cupons Diarios</h5>
                   <CardTitle tag="h3">
                     <i className="tim-icons icon-delivery-fast text-primary" />{' '}
-                    3,500€
+                    342
                   </CardTitle>
                 </CardHeader>
                 <CardBody>
@@ -199,9 +199,9 @@ class Dashboard extends React.Component {
             <Col lg="4">
               <Card className="card-chart">
                 <CardHeader>
-                  <h5 className="card-category">Completed Tasks</h5>
+                  <h5 className="card-category">Missoes Realizadas</h5>
                   <CardTitle tag="h3">
-                    <i className="tim-icons icon-send text-success" /> 12,100K
+                    <i className="tim-icons icon-send text-success" /> 12.324
                   </CardTitle>
                 </CardHeader>
                 <CardBody>
